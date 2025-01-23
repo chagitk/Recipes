@@ -1,0 +1,33 @@
+
+ /* הקונטיינר הראשי של הדף */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* הגדרת גובה מלא לדף */
+  }
+ .titel-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ } 
+  /* הצגת התוכן בצד שמאל למעלה */
+  .top-left {
+    align-self: flex-start;  /* מציב את התוכן בצד שמאל */
+    margin: 10px;  /* מרווח מהקצוות */
+  }
+  
+  /* הצגת התפריט בצד ימין למעלה */
+  .top-right {
+    align-self: flex-end;  /* מציב את התוכן בצד ימין */
+    margin: 10px;  /* מרווח מהקצוות */
+  }
+  
+  /* הצגת התוכן במרכז הדף מתחת */
+  .main-content {
+    flex-grow: 1;  /* מאפשר לתוכן הראשי לתפוס את כל המקום הפנוי */
+    display: flex;
+    justify-content: center;  /* מיישר את התוכן במרכז */
+    align-items: center;  /* מיישר את התוכן במרכז גם בצורה אנכית */
+    padding: 20px;
+  }
+  
